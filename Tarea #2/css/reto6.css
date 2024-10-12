@@ -1,0 +1,56 @@
+header {
+    background-image: linear-gradient(to left, #2f4458 , #ffff);
+    background-size: cover;
+    font-weight: bold;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+}
+
+header h1 {
+    font-size: 50px;
+    color: #2f4458;
+    text-shadow: 2px 2px 2px #6e9abe;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #2f4458;
+    bottom: 0px;
+}
+
+footer p {
+    color: #ffff;
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 15px;
+}
+
+.banner1 {
+    background-image: url("../imagenes/banner2.jpg");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.5);
+    background-color:rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+}
+
+.container-fluid1 {
+    padding-top: 210px;
+    padding-bottom: 200px;
+}
+
+.container-fluid1 h1 {
+    font-weight: bold;
+}
+
+.container-fluid1 a {
+    font-weight: bolder;
+    color: whitesmoke;
+}
+
+.container-fluid1 p {
+    font-size: 20px;
+}

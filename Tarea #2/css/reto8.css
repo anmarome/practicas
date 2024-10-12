@@ -1,0 +1,48 @@
+header {
+    background-image: linear-gradient(to left, #2f4458 , #ffff);
+    background-size: cover;
+    font-weight: bold;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+}
+
+header h1 {
+    font-size: 50px;
+    color: #2f4458;
+    text-shadow: 2px 2px 2px #6e9abe;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #2f4458;
+    bottom: 0px;
+}
+
+footer p {
+    color: #ffff;
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 15px;
+}
+
+.container-fluid1 {
+    background-image: url("../imagenes/banner8.jpg");
+    background-size: cover;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-color:rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+}
+
+.fogo {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+
+.container-fluid1 button {
+    padding: 10px 30px;
+    border-radius: 0;
+}

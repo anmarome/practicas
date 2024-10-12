@@ -1,0 +1,57 @@
+header {
+    background-image: linear-gradient(to left, #2f4458 , #ffff);
+    background-size: cover;
+    font-weight: bold;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+}
+
+header h1 {
+    font-size: 50px;
+    color: #2f4458;
+    text-shadow: 2px 2px 2px #6e9abe;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #2f4458;
+    bottom: 0px;
+}
+
+footer p {
+    color: #ffff;
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 15px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container-fluid1 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.primera {
+    background-color: #f3f1fb;
+}
+
+.segunda {
+    background-color: #d0c5fd;
+}
+
+.tercera {
+    background-color: #9781f3;
+}
+
+span {
+    font-weight: bold;
+}

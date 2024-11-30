@@ -1,0 +1,274 @@
+/*color variables */
+$primary-color: #753a7c;
+$secondary-color: #643a6c;
+$light-color: #fcf4fd;
+$dark-color: #000;
+$grey-color: grey;
+$white-color: #fff;
+
+/* font variables */
+$font-primary: 'Poppins', sans-serif;
+$font-size-base: 18px;
+$font-size-large: 48px;
+$font-size-sm: 20px;
+$font-size-xxl: xx-large;
+$font-weight-normal: 500;
+$font-weight-bold: bold;
+$font-weight-bolder: bolder;
+
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-primary;
+    scroll-behavior: smooth;
+}
+
+/*HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER*/
+header {
+    background-color: $white-color;
+    padding: 1em;
+    border-bottom: 1px solid $primary-color;
+}
+
+/*MENU OPTION CONTROLS*/
+.navbar-nav {
+    text-align: center;
+}
+
+.nav-item a {
+    font-size: $font-size-sm;
+    font-weight: $font-weight-normal;
+    text-decoration: none;
+    color: $grey-color;
+    transition: all 0.5s ease-out;
+}
+
+.nav-item a:hover,
+.nav-item span:hover {
+    color: $dark-color;
+}
+
+.nav-item span {
+    font-weight: $font-weight-bold;
+    color: $primary-color;
+}
+
+.nav-item a:focus, .nav-item a.active {
+    color: $primary-color;
+}
+
+.navigation-wrap .nav-item {
+    padding: 10px;
+    transition: all 200ms linear;
+}
+
+/* HAMBURGUER menu navbar-toggler*/
+.navbar-toggler {
+    background-color: $primary-color;
+}
+
+.navbar-toggler i {
+    color: $dark-color;
+    font-size: 27px;
+}
+
+.navbar-toggler:hover {
+    background-color: $grey-color;
+}
+
+/*SECCION 1 SECCION 1 SECCION 1SECCION 1SECCION 1 SECCION 1*/
+.container-fluid1 {
+    background-color: $light-color;
+    color: $secondary-color;
+}
+
+.container-fluid1 button {
+    background-color: $secondary-color;
+    border: none;
+}
+
+/*SECCION 2 SECCION 2 SECCION 2 SECCION 2 SECCION 2 SECCION 2*/
+.bannerparallax {
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+    height: calc(70vh);
+    background-position: center;
+    background-image: url('../imagenes/banner1.jpg');
+}
+
+.container2Content {
+    margin-left: 10%;
+}
+
+.container2Content h1 {
+    font-size: $font-size-large;
+    font-weight: $font-weight-bolder;
+}
+
+.container2Content p,
+.container2Content span {
+    font-size: $font-size-base;
+}
+
+.container2Content span {
+    font-weight: $font-weight-bold;
+}
+
+.container2Content button {
+    background-color: $primary-color;
+    color: $white-color;
+    border: none;
+    padding: 10px 20px;
+    font-size: $font-size-base;
+    cursor: pointer;
+}
+
+/*SECCION 3 SECCION 3 SECCION 3 SECCION 3 SECCION 3 SECCION 3*/
+#contador {
+    font-size: large;
+    font-weight: $font-weight-bold;
+    margin-top: 3%;
+}
+
+.container-fluid3 {
+    background-color: $primary-color;
+    padding: 1% 5%;
+}
+
+.titulo2 {
+    font-weight: $font-weight-bold;
+}
+
+.disclaimer {
+    font-size: small;
+}
+
+.countdown, .button3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    padding: 5%;
+    margin: 3%;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.date {
+    font-size: $font-size-xxl;
+    font-weight: $font-weight-bold;
+}
+
+.boton3 {
+    margin: 3%;
+}
+
+/* SECCION 4 SECCION 4 SECCION 4 SECCION 4 SECCION 4 SECCION 4*/
+.video:hover,
+audio:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.embed-responsive,
+audio {
+    margin-bottom: 3%;
+}
+
+.container-fluid4 {
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../imagenes/banner2.jpg');
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+}
+
+.imagenes {
+    width: 19rem;
+    height: 15rem;
+}
+
+/* MAPA MAPA MAPA MAPA MAPA MAPA MAPA MAPA MAPA MAPA MAPA MAP MA*/
+.titulajes {
+    background-color: $primary-color;
+    font-weight: $font-weight-bold;
+}
+
+/*  SCROLL TOP */
+.botonScrollTop {
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background-color:$dark-color;
+    right: 30px;
+    bottom: 20px;
+    text-align: center;
+    line-height: 45px;
+    color: $secondary-color;
+    font-size: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.animacion1 {
+    width: 18rem;
+    height: 21rem;
+}
+
+.icono {
+    color: $secondary-color;
+    font-size: 8rem;
+}
+
+.tituloRedes {
+    color: $secondary-color;
+    font-weight: $font-weight-bold;
+}
+
+/*CHAT WHATAPP*/
+.container-botonws {
+    background-color: #e4e4e4;
+    border: 1px solid $white-color;
+    position: fixed;
+    z-index: 1000;
+    border-radius: 50%;
+    bottom: 100px;
+    right: 25px;
+    padding: 25px;
+    transition: ease 0.3s;
+    animation: efecto 1.2s infinite;
+}
+
+.container-botonws:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.botonws {
+    width: 1.5rem;
+    transition: ease 1s;
+}
+
+@keyframes efecto {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);
+    }
+    100% {
+        box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+    }
+}

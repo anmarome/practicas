@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="shortcut icon" href="imagenes/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="css/imagehover.css" rel="stylesheet">
+    <title>Granja de bayas Knotts</title>
+</head>
+
+<body>
+
+    <header id="inicio">
+        <nav class="navbar navbar-expand-lg navbar-dark navigation-wrap">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="imagenes/logo.png" alt="logo granja" class="img-fluid">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#map">Donde Estamos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#exp">Experiencias</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#pase">Pase de temporada</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#granja"><span>Granja del miedo</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="container-fluid1 py-3 px-3" id="politica">
+        <div class="d-flex justify-content-center align-items-center">
+            <h4 class="me-3">Conozca nuestra política de acompañantes</h4>
+            <button type="button" class="btn btn-primary rounded-pill px-3" onclick="window.location.href='https://www.chino.k12.ca.us/cms/lib8/CA01902308/Centricity/Domain/30/Knotts%20Letter.pdf'">PDF</button>
+        </div>
+    </section>
+
+    <section class="container-fluid text-white d-flex align-items-center bannerparallax" id="granja">
+        <div class="container2Content">
+            <h1 class="mb-3">GRANJA DEL MIEDO KNOTT</h1>
+            <span>Unicas noches Sep 19 - Nov 2</span>
+            <p class="mb-3 mt-3">Laberintos embrujados, shows siniestros, y mas de 1,000 creaturas horripilantes acechando en la niebla.</p>
+            <button class="btn btn-light mb-3 me-3 rounded-pill">Compra las entradas ahora</button>
+            <button class="btn btn-light mb-3 me-3 rounded-pill">Mas informacion</button>
+        </div>
+    </section>
+
+    <div class="container-fluid3 text-white align-items-center" id="pase">
+        <div class="row">
+            <div class="countdown col-md-4">  <!-- CODIGO OBTENIDO DE W3SCHOOLS https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_countdown -->
+                <p id="contador"></p>
+                <script>
+                    // Set the date we're counting down to
+                    var countDownDate = new Date("Nov 30, 2024 00:00:00").getTime();
+                    
+                    // Update the count down every 1 second
+                    var x = setInterval(function() {
+                    
+                    // Get today's date and time
+                    var now = new Date().getTime();
+                        
+                    // Find the distance between now and the count down date
+                    var distance = countDownDate - now;
+                        
+                    // Time calculations for days, hours, minutes and seconds
+                    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                        
+                    // Output the result in an element with id="demo"
+                    document.getElementById("contador").innerHTML = days + " days  " + hours + " hours  "
+                    + minutes + " minutes  " + seconds + " seconds  ";
+                        
+                    // If the count down is over, write some text 
+                    if (distance < 0) {
+                        clearInterval(x);
+                        document.getElementById("contador").innerHTML = "EXPIRED";
+                    }
+                    }, 1000);
+                </script>
+            </div>
+
+            <div class="content col-md-4">
+                <h4>Pase de temporada a solo 10 pagos de $7*</h4>
+                <p class="titulo2">Apresurate! La oferta termina el 31/10</p>
+                <p>Mejor oferta de la temporada. Disfruta de visitas ilimitadas en 2024 & 2025 incluyendo Granja Spooky y
+                Granja Navidad.</p>
+                <p class="disclaimer">*Aplica solo para compras en linea. Pago inicial requerido. Impuestos pueden aplicar. No cargos adicionales. Excluye la granja del miedo.</p>
+            </div>
+
+            
+            <div class="content button3 col-md-4">
+                <button class="btn btn-light rounded-pill boton3">Compra ahora</button>
+            </div>
+        </div>
+
+        <div class="row cartas">
+
+            <div class="col-md-3">
+                <h2>Eventos Especiales</h2>
+                <a>Proximos los eventos especiales <i class="uil uil-arrow-right icon"></i></a>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <h3>Octubre</h3>
+                    <span class="date">19</span>
+                    <h4>Knott Granja Spooky</h4>
+                    <p>9:00AM - 5:00PM</p>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <h3>Octubre</h3>
+                    <span class="date">19</span>
+                    <h4>Knott Granja Spooky</h4>
+                    <p>7:00PM - 2:00AM</p>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <h3>Noviembre</h3>
+                    <span class="date">04</span>
+                    <h4>Tributos Militares</h4>
+                    <p>Todo el dia</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="container-fluid4 py-5" id="exp">
+        <div class="container">
+            <h2 class="mb-5 text-center text-white">EXPERIENCIAS KNOTT</h2>
+            <div class="row">
+                <div class="col-md-4 embed-responsive embed-responsive-4by3">
+                    <iframe class="embed-responsive-item video" src="https://www.youtube.com/embed/jrtZKhGOQYo?si=4kS36WLJD7OWW8l8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="col-md-4 embed-responsive embed-responsive-4by3">
+                    <iframe class="embed-responsive-item video" src="https://www.youtube.com/embed/aU3ZF0_Shv4?si=72uUZRMLRma6y6x8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="col-md-4 embed-responsive embed-responsive-4by3">
+                    <iframe class="embed-responsive-item video" src="https://www.youtube.com/embed/ba2_Y3SbUCE?si=Eg9HtxNnBEPC9SXv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <audio controls>
+                        <source src="audios/audio1.mp3" type="audio/mpeg"
+                    </audio>
+                </div>
+
+                <div class="col-md-4">
+                    <audio controls>
+                        <source src="audios/audio2.mp3" type="audio/mpeg"
+                    </audio>
+                </div>
+
+                <div class="col-md-4">
+                    <audio controls>
+                        <source src="audios/audio3.mp3" type="audio/mpeg"
+                    </audio>
+                </div>
+            </div>
+
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <figure class="imghvr-push-down">
+                        <img src="imagenes/img1.jpg" alt="imagen1" class="imagenes mb-3">
+                    </figure>
+                </div>
+    
+                <div class="col-md-4">
+                    <figure class="imghvr-push-up">
+                        <img src="imagenes/img2.jpg" alt="imagen2" class="imagenes mb-3">
+                    </figure>
+                </div>
+    
+                <div class="col-md-4">
+                    <figure class="imghvr-push-left">
+                        <img src="imagenes/img3.jpg" alt="imagen3" class="imagenes mb-3">
+                    </figure>
+                </div>
+            </div>
+    
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <figure class="imghvr-blur">
+                        <img src="imagenes/img4.jpg" alt="imagen4" class="imagenes mb-3">
+                    </figure>
+                </div>
+    
+                <div class="col-md-4">
+                    <figure class="imghvr-fold-right">
+                        <img src="imagenes/img5.jpg" alt="imagen5" class="imagenes mb-3">
+                    </figure>
+                </div>
+    
+                <div class="col-md-4">
+                    <figure class="imghvr-zoom-out-flip-horiz">
+                        <img src="imagenes/img6.jpg" alt="imagen6" class="imagenes mb-3">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="map">
+        <h2 class="titulajes text-center text-white py-3">Mapa de ubicación</h2>
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d16016.505854889505!2d-118.0002265!3d33.8443038!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dd295ff57f78a3%3A0xae8e394e901e3055!2sKnott&#39;s%20Berry%20Farm!5e1!3m2!1ses!2scr!4v1729645915162!5m2!1ses!2scr" 
+                width="100%" height="400" allowfullscreen loading="lazy">
+            </iframe>></iframe>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <div class="container text-center">
+            <h2 class="tituloRedes mt-4">Redes Sociales</h2>
+            <div class="row">
+                <div class="col-md-4 pt-3">
+                    <a href="https://www.youtube.com/user/knottsberryfarm" target="_blank">
+                        <i class="uil uil-youtube icono"></i>
+                    </a>
+                </div>
+
+                <div class="col-md-4 pt-3">
+                    <a href="https://www.instagram.com/knottsberryfarm/" target="_blank">
+                        <i class="uil uil-instagram-alt icono"></i>
+                    </a>
+                </div>
+
+                <div class="col-md-4 pt-3">
+                    <a href="https://www.facebook.com/KnottsBerryFarm/" target="_blank">
+                        <i class="uil uil-facebook icono"></i>
+                    </a>
+                </div>
+            </div>
+            <lottie-player src="https://lottie.host/bbb7d93b-683a-45b3-9e7f-fb60609fe36a/TsPAVSbAb5.json" background="transparent" speed="1" loop autoplay class="container animacion1"> </lottie-player>
+        </div>
+    </section>
+
+    <!-- SCROLLTOP -->
+    
+    <a href="#inicio">
+        <div class="botonScrollTop">
+            <i class="uil uil-angle-double-up"></i>
+        </div>
+    </a>
+
+    <!-- WHATSAPP -->
+    <div class="container-botonws">
+        <a href="https://walink.co/67c8f0" class="whatsapp" target="blank">
+            <img class="botonws" src="imagenes/ws.png" alt="">
+        </a>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Granja de Bayas Knott</p>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#politica" class="text-white">Politica de Acompañantes</a></li>
+            <li class="list-inline-item"><a href="#form" class="text-white">Contactenos</a></li>
+        </ul>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- libreria Lottie JS-->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@0.3.0/dist/lottie-player.js"></script>
+
+</body>
+</html>

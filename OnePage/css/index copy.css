@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/*HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER*/
+
+header {
+    background-color: #fff;
+    padding: 1em;
+    border-bottom: 1px solid #753a7c;
+}
+
+/*MENU OPTION CONTROLS*/
+.navbar-nav {
+    text-align: center;
+}
+
+.nav-item a {
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color: grey;
+    transition: all 0.5s ease-out;
+}
+
+.nav-item a:hover,
+.nav-item span:hover {
+    color: #000;
+}
+
+.nav-item span {
+    font-weight: bold;
+    color: #753a7c;
+}
+
+.nav-item a:focus, .nav-item a.active {
+    color: #753a7c;
+}
+
+.navigation-wrap .nav-item {
+    padding: 10px;
+    transition: all 200ms linear;
+}
+
+/* HAMBURGUER menu navbar-toggler*/
+
+.navbar-toggler {
+    background-color: #753a7c;
+}
+
+.navbar-toggler i {
+    color: #000;
+    font-size: 27px;
+}
+
+.navbar-toggler:hover {
+    background-color: grey;
+}
+
+/*SECCION 1 SECCION 1 SECCION 1SECCION 1SECCION 1 SECCION 1*/
+.container-fluid1 {
+    background-color: #fcf4fd;
+    color: #643a6c;
+}
+
+.container-fluid1 button {
+    background-color: #643a6c;
+    border: none;
+}
+
+
+/*SECCION 2 SECCION 2 SECCION 2 SECCION 2 SECCION 2 SECCION 2*/
+.bannerparallax {
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+    /*control altura del banner*/
+    height: calc(70vh);
+    background-position: center;
+    background-image: url('../imagenes/banner1.jpg');
+}
+
+.container2Content {
+    margin-left: 10%;
+}
+
+.container2Content h1 {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.container2Content p {
+    font-size: 18px;
+}
+
+.container2Content span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.container2Content button {
+    background-color: #753a7c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/*SECCION 3 SECCION 3 SECCION 3 SECCION 3 SECCION 3 SECCION 3*/
+.container-fluid3{
+    background-color: #753a7c;
+    padding: 1% 5% 1% 5%;
+}
+
+.titulo2{
+    font-weight: bold;
+}
+
+.disclaimer{
+    font-size: small;
+}
+
+.countdown, .button3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contador {
+    font-size: large;
+    font-weight: bold;
+    margin-top: 3%;
+}
+.card {
+    padding: 5%;
+    margin: 3%;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.date {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.boton3 {
+    margin: 3%;
+}
+
+/* SECCION 4 SECCION 4 SECCION 4 SECCION 4 SECCION 4 SECCION 4*/
+.video:hover,
+audio:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.embed-responsive,
+audio {
+    margin-bottom: 3%;
+}
+
+.container-fluid4 {
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../imagenes/banner2.jpg');
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+}
+.imagenes {
+    width: 19rem;
+    height: 15rem;
+}
+
+/* MAPA MAPA MAPA MAPA MAPA MAPA MAPA MAPA MAPA MAPA MAPA MAP MA*/
+.titulajes {
+    background-color: #753a7c;
+    font-weight: bold;
+}
+
+/* FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM*/
+.containerForm {
+    padding: 3%;
+    background-color: #643a6c;
+}
+.tituloForm {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/*  SCROLL TOP */
+
+.botonScrollTop {
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background-color: #643a6c;
+    right: 30px;
+    bottom: 20px;
+    text-align: center;
+    line-height: 45px;
+    color: #000;
+    font-size: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.animacion1 {
+    width: 18rem;
+    height: 21rem;
+}
+
+.icono {
+    color: #643a6c;
+    font-size: 8rem;
+}
+
+.tituloRedes {
+    color: #643a6c;
+    font-weight: bold;
+}
+
+/*CHAT WHATAPP*/
+
+.container-botonws {
+    /*color de fondo imagen*/
+    background-color: #e4e4e4;
+    border: 1px solid #fff;
+    position: fixed;
+    z-index: 1000;
+    border-radius: 50%;
+    bottom: 100px;
+    right: 25px;
+    padding: 25px;
+    transition: ease 0.3s;
+    animation: efecto 1.2s infinite;
+}
+
+.container-botonws:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+
+/*efecto de animación imagen chat*/
+
+.botonws {
+    width: 1.5rem;
+    transition: ease 1s;
+}
+
+@keyframes efecto {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);
+    }
+    100% {
+        box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+    }
+}
